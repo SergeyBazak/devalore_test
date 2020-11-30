@@ -27,7 +27,7 @@ jobs:
 
       - name: List current folder
         run : |
-          pwd,
+          pwd
           ls -la
 
       - name: Install dependencies from requirements.txt
