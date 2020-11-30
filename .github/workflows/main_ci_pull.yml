@@ -28,8 +28,6 @@ jobs:
       - name: List current folder
         run : ls -la
 
-      - name: Install all from requirements.txt
-        run:  pip install --no-cache-dir -r requirements.txt 
+      - name: Install dependencies from requirements.txt
+        run : pip install --no-cache-dir -r requirements.txt 
 
-      - name: Run tests
-        run: python maintest.py
