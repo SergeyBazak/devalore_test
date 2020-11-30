@@ -26,7 +26,9 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: List current folder
-        run : ls -la
+        run : |
+          pwd,
+          ls -la
 
       - name: Install dependencies from requirements.txt
         run: |
