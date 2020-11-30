@@ -29,9 +29,7 @@ jobs:
         run : ls -la
 
       - name: Install all from requirements.txt
-        run: |
-          echo run pip, 
-          pip install --no-cache-dir -r requirements.txt 
+        run:  pip install --no-cache-dir -r requirements.txt 
 
       - name: Run a multi-line script
         run: python maintest.py
