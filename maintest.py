@@ -48,11 +48,6 @@ def show_user_page(username):
 
 class TestStringMethods(unittest.TestCase):
 
-    def test_prep(self):
-        myfile = open(filename, mode='w', encoding='utf-8')
-        json.dump(test_json, myfile)
-        myfile.close()
-
     def test1(self):
         self.assertEqual(usermain_page(), '"{test_user: { name: Test User, favorite_color: Black }}"')
 
@@ -65,5 +60,8 @@ class TestStringMethods(unittest.TestCase):
 
 # --------Main------------------
 if __name__ == '__main__':
+    myfile = open(filename, mode='w', encoding='utf-8')
+    json.dump(test_json, myfile)
+    myfile.close()
     unittest.main()
 # ------------------------------
