@@ -1,5 +1,4 @@
-from main import usermain_page
-from main import show_user_page
+from main import *
 import unittest
 import json
 
