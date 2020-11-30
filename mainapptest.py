@@ -1,7 +1,8 @@
-#from flask import Flask
-from mainapp import *
 import unittest
 import json
+from mainapp import usermain_page
+from mainapp import show_user_page
+
 
 class TestStringMethods(unittest.TestCase):
 
@@ -14,6 +15,7 @@ class TestStringMethods(unittest.TestCase):
     def test3(self):
         self.assertEqual(show_user_page("test_user123"), "User doesn't exist")
 
+
 # --------Main------------------
 if __name__ == '__main__':
     test_json = {
@@ -23,7 +25,7 @@ if __name__ == '__main__':
             "favorite_color": "Black"
         }
     }
-    #filename = "users.json"
+    filename = "users.json"
     myfile = open(filename, mode='w', encoding='utf-8')
     json.dump(test_json, myfile)
     myfile.close()
