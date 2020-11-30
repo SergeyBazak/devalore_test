@@ -1,4 +1,4 @@
-# This is a basic workflow to help you get started with Actions
+h# This is a basic workflow to help you get started with Actions
 
 name: CI
 
@@ -30,7 +30,7 @@ jobs:
 
       - name: Install all from requirements.txt
         run: |
-          python -version, 
+          echo run pip, 
           pip install --no-cache-dir -r requirements.txt 
 
       - name: Run a multi-line script
