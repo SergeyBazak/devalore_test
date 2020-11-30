@@ -30,7 +30,7 @@ jobs:
 
       - name: Install all from requirements.txt
         run: |
-          python --version, 
+          python -version, 
           pip install --no-cache-dir -r requirements.txt 
 
       - name: Run a multi-line script
