@@ -30,5 +30,8 @@ jobs:
           #python -m pip install --upgrade pip
           pip3 install --no-cache-dir -r requirements.txt
 
+      - name: flake8 Lint
+        uses: py-actions/flake8@v1
+        
       - name: Run tests
         run : python3 mainapptest.py
