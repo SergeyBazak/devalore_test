@@ -42,8 +42,8 @@ jobs:
           ignore: |
             "E302"
             "E305"
-            "126"
-            "265"
+            "E126"
+            "E265"
           max-line-length: "150"
 
       - name: Run tests
